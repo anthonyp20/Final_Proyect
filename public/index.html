@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Chat</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #840303;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 2.5em;
+      color: #00f0ff;
+    }
+
+    .movie-section {
+      display: flex;
+      align-items: center;
+      background-color: #000;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #00f0ff55;
+      margin: 20px 0;
+      overflow: hidden;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .movie-img {
+      width: 50%;
+      height: auto;
+    }
+
+    .dialogues {
+      padding: 20px;
+    }
+
+    .message {
+      margin-bottom: 15px;
+      line-height: 1.6;
+      display: none;
+    }
+
+    .name {
+      font-weight: bold;
+      color: #00f0ff;
+    }
+
+    .start-button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #00f0ff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #111;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .start-button:hover {
+      background-color: #00d2e0;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 767px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .dialogues {
+        padding: 15px;
+      }
+
+      .message {
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="presentation" id="presentation">
+    <img src="img/Captura_de_pantalla_2025-04-27_202500-removebg-preview.png" alt="Presentation">
+  </div>
+
+  <h1>🎬 Movie Conversation 🎬</h1>
+
+  <div class="movie-section">
+    <img class="movie-img" src="https://www.worldsrc.net/thumb/films/thumb_eca_WorldSrc.net_The_Godfather_poster.jpg" alt="The Godfather">
+    <div class="dialogues">
+      <div class="message hidden">
+        <span class="name">Oliver:</span> Hey Anthony, what's up? Seen any good movies lately?
+      </div>
+      <div class="message hidden">
+        <span class="name">Anthony:</span> Hey Oliver! Yeah, a couple. But if we're talking about the best I've seen... I think it would have to be "The Godfather." It's a classic, the acting is incredible, and the story... amazing! What about you? What's your favorite?
+      </div>
+    </div>
+  </div>
+
+  <div class="movie-section">
+    <img class="movie-img" src="https://upload.wikimedia.org/wikipedia/en/1/11/2001_A_Space_Odyssey_%281968%29.png" alt="2001: A Space Odyssey" />
+    <div class="dialogues">
+      <div class="message hidden">
+        <span class="name">Oliver:</span> "The Godfather" is a masterpiece, no doubt! But my favorite is "2001: A Space Odyssey." I know it's a bit... different, but the aesthetics, the music, the way it makes you think... it's a masterpiece! It had me thinking for days. What did you think of that one?
+      </div>
+      <div class="message">
+        <span class="name">Anthony:</span> I've seen it, yeah. It's very... peculiar. It's not the kind of movie that immediately grabs me, but I recognize its importance and its impact on cinema. The Strauss music is great. But for me, the emotion and intensity of "The Godfather" are unbeatable. The tension, the betrayals... it's a rollercoaster!
+      </div>
+    </div>
+  </div>
+
+  <div class="movie-section">
+    <img class="movie-img" src="https://i.ebayimg.com/00/s/MTYwMFgxMDgw/z/lyAAAOSwzjdZ1nN~/$_57.JPG?set_id=8800005007" alt="Blade Runner 2049">
+    <div class="dialogues">
+      <div class="message hidden">
+        <span class="name">Oliver:</span> I understand. It's a matter of taste, I guess. I'm more drawn to the exploration of ideas and the atmosphere of "2001," while "The Godfather" is more of a character-driven drama. Both are excellent films, though.
+      </div>
+      <div class="message hidden">
+        <span class="name">Anthony:</span> Totally agree. There's room for all kinds of cinema. How about next time we watch a movie together and then compare our opinions?
+      </div>
+      <div class="message hidden">
+        <span class="name">Oliver:</span> I'd love that! How about "Blade Runner 2049"? It's visually stunning.
+      </div>
+      <div class="message hidden">
+        <span class="name">Anthony:</span> Good idea! "Blade Runner 2049" sounds interesting. I accept the challenge. See you soon.
+      </div>
+      <div class="message hidden">
+        <span class="name">Oliver:</span> See you!
+      </div>
+    </div>
+  </div>
+
+
+  <button id="start-button" class="start-button">Start</button>
+
+
+  <script src="main.js"></script>
+ 
+</body>
+
+</html>
